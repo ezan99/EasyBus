@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="default">{{'HOME.title' | translate}} <ion-icon name="home-outline"></ion-icon></ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="openLanguagePopover($event)">
+        <ion-icon name="language-outline" slot="icon-only">  
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" scroll="false">
+ <ion-list>
+   <ion-item *ngIf="dateOfEvent"><h1>{{dateOfEvent}}</h1></ion-item>
+   <ion-card color="primary">
+     <ion-label><ion-icon name="calendar-outline"></ion-icon>{{'HOME.date' | translate}}</ion-label>
+     <ion-datetime displayformat="MMM DD, YYYY" pickerformat="MMM DD, YYYY" [value]="currentDate"></ion-datetime>
+   </ion-card>
+  </ion-list>
+
+  <ion-list class="waypoint">
+    <ion-list-header>
+      <ion-label>
+        {{'HOME.waypoints' | translate}}
+      <ion-icon name="arrow-up-outline"></ion-icon><ion-icon name="arrow-down-outline"></ion-icon>
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-card color="primary">
+      <ion-label><ion-icon name="bus-outline"></ion-icon>
+      {{'HOME.departure' | translate}}
+      </ion-label>
+      <ion-select [(ngModel)]="start_location" placeholder="Start">
+        <ion-select-option value="gostivar">Gostivar</ion-select-option>
+        <ion-select-option value="tetove">Tetovo</ion-select-option>
+      </ion-select>
+    </ion-card>
+  
+    <ion-card color="primary">
+      <ion-label><ion-icon name="bus-outline"></ion-icon>{{'HOME.destination' | translate}}</ion-label>
+      <ion-select [(ngModel)]="end_location" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="gjermani">Germany</ion-select-option>
+        <ion-select-option value="zvicer">Switzerland</ion-select-option>
+        <ion-select-option value="itali">Italy</ion-select-option>
+        <ion-select-option value="shkup">Skopje</ion-select-option>
+      </ion-select>
+    </ion-card>
+  </ion-list>
+ 
+  <ion-button expand="block" (click)="navigateSchedule()" (click)="showLoadingg()">{{'HOME.btn' | translate}}</ion-button>
+</ion-content>

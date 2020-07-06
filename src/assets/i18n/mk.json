@@ -1,0 +1,37 @@
+{
+    "HOME":{
+        "title": "Easy Дома",
+        "date":"Датум",
+        "waypoints": "Изберете Пунктови за пат",
+        "departure": "Поаѓање",
+        "destination": "Дестинација",
+        "btn":"Барај Автобуси"
+    },
+    "ALERT":{
+        "header":"Error",
+        "msg":"Имаше проблем со ваша операциа"
+    },
+    "TAB":{
+        "home": "Дома",
+        "settings": "Агенции",
+        "favorites": "Омилени"
+    },
+    "WELCOME":{
+        "welcome":"Добредојдовте во EasyBus",
+        "travel":"Распоред на патувања!",
+        "start":"Притиснете start за да започнете"
+    },
+    "AGENCIES":{
+        "atitle":"Агенции",
+        "agency1":"Насир Турс",
+        "agency2":"Еуро Турс",
+        "agency3":"Дурмо Турс",
+        "agency4":"Идо Турс",
+        "agencydescription":"Кликнете за да ги видите достапните распореди.",
+        "abutton":"Кликнете"
+
+    },
+    "SCHEDULES":{
+        "schedule":"Распореди"
+    }
+}

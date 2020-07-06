@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaultHref="home/feed"
+      [text]="buttonText"
+      [icon]="buttonIcon"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'SCHEDULES.schedule' | translate}}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="switchStyle()">
+        <ion-icon name="bulb" slot="icon-only" >{{tableStyle}}</ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+
+  <ion-card *ngFor="let item of companies" color="medium">
+    <ion-card-content>
+      <ion-card-title>
+        {{item.name}}
+      </ion-card-title>
+      <ion-card *ngFor="let time of item.schedule">
+        <ion-card-content>
+        {{ time.start_location.toUpperCase() }} -
+            {{ time.end_location.toUpperCase() }} 
+            @ {{ time.time }}
+          </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-list *ngFor="let item of companies">
+    <ion-item>
+      <ion-label>
+        Agency: {{item.name}}
+        <ion-list *ngFor="let time of item.schedule">
+          <ion-item>
+            <ion-card color="primary">
+              <ion-card-content>
+            {{ time.start_location.toUpperCase() }} -
+            {{ time.end_location.toUpperCase() }} 
+            @ {{ time.time }}
+          </ion-card-content>
+          </ion-card>
+          </ion-item>
+        </ion-list>
+      </ion-label>
+  </ion-item>
+  </ion-list> -->
+  
+  <!-- <ngx-datatable 
+  [rows]="companies" 
+  [ngClass]="tableStyle"
+  [rowHeight]="'auto'"
+  [headerHeight]="50"
+  [columnMode]="'force'"
+  >
+
+    <ngx-datatable-column name="Company"></ngx-datatable-column>
+    <ngx-datatable-column name="Start"></ngx-datatable-column>
+    <ngx-datatable-column name="End"></ngx-datatable-column>
+
+<ngx-datatable-column name="Actions" [sortable]="false">
+  <ng-template let-row="row">
+    {{ row.name }}
+    <ion-button size="small" fill="outline" (click)="open(row)">Details</ion-button>
+  </ng-template>
+</ngx-datatable-column>
+
+  </ngx-datatable> -->
+
+</ion-content>

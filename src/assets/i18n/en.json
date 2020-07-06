@@ -1,0 +1,37 @@
+{
+    "HOME":{
+        "title": "EasyBus Home",
+        "date":"Date",
+        "waypoints": "Select Waypoints",
+        "departure": "Departure",
+        "destination": "Destination",
+        "btn":"Search Buses"
+    },
+    "ALERT":{
+        "header":"Error",
+        "msg":"There was a problem with your operation"
+    },
+    "TAB":{
+        "home": "Home",
+        "settings": "Agencies",
+        "favorites": "Favorites"
+    },
+    "WELCOME":{
+        "welcome":"Welcome to EasyBus",
+        "travel":"The travel timetable!",
+        "start":"Press start to begin"
+    },
+    "AGENCIES":{
+        "atitle":"Agencies",
+        "agency1":"Nasir Tours",
+        "agency2":"Euro Tours",
+        "agency3":"Durmo Tours",
+        "agency4":"Ido Tours",
+        "agencydescription":"Click to view the available schedules.",
+        "abutton":"Click"
+
+    },
+    "SCHEDULES":{
+        "schedule":"Schedules"
+    }
+}

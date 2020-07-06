@@ -1,0 +1,37 @@
+{
+    "HOME":{
+        "title": "EasyBus Ballina",
+        "date":"Data",
+        "waypoints": "Zgjidh Pikat",
+        "departure": "Nisja",
+        "destination": "Destinacioni",
+        "btn":"Kerko Autobus"
+    },
+    "ALERT":{
+        "header":"Error",
+        "msg":"Ekziston problem me operacionin tuaj"
+    },
+    "TAB":{
+        "home": "Ballina",
+        "settings": "Agjencionet",
+        "favorites": "Preferuarat"
+    },
+    "WELCOME":{
+        "welcome":"Mirësevini në EasyBus",
+        "travel":"Orari i udhëtimit!",
+        "start":"Shtypni start për të filluar"
+    },
+    "AGENCIES":{
+        "atitle":"Agjencionet",
+        "agency1":"Nasir Tours",
+        "agency2":"Euro Tours",
+        "agency3":"Durmo Tours",
+        "agency4":"Ido Tours",
+        "agencydescription":"Klikoni për të parë oraret në dispozicion.",
+        "abutton":"Klikoni"
+
+    },
+    "SCHEDULES":{
+        "schedule":"Orari"
+    }
+}

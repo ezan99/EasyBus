@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaultHref="home/feed"
+      [text]="buttonText"
+      [icon]="buttonIcon"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'SCHEDULES.schedule' | translate}}</ion-title>
+
+    <!-- <ion-buttons slot="end">
+      <ion-button (click)="switchStyle()">
+        <ion-icon name="bulb" slot="icon-only" >{{tableStyle}}</ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+
+  <ion-card *ngFor="let item of schedule" color="medium">
+    
+    <ion-card-content>
+        <ion-card-content>
+        {{ item.start_location.toUpperCase() }} -
+            {{ item.end_location.toUpperCase() }} 
+            @ {{ item.time }}
+        </ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,13 @@
+{
+  "name": "easyBuss",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "",
+      "proxyUrl": "http://bussapp.test/"
+    }
+],
+  "type": "angular"
+}

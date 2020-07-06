@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  
+    <ion-title>
+      
+    </ion-title>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"><ion-icon name="cog"></ion-icon> Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+<!-- Toggles in a List -->
+<ion-list>
+  <ion-item>
+    <ion-label>Dark Mode</ion-label>
+    <ion-toggle [(ngModel)]="darkmode"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Language</ion-label>
+    <ion-select placeholder="Select Language">
+      <ion-select-option value="en">English</ion-select-option>
+      <ion-select-option value="al">Albanian</ion-select-option>
+      <ion-select-option value="mk">Macedonian</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sausage</ion-label>
+    <ion-toggle [(ngModel)]="sausage"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mushrooms</ion-label>
+    <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+  </ion-item>
+</ion-list>
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+</ion-content>
