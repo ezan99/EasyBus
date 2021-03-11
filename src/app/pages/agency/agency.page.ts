@@ -24,8 +24,8 @@ export class AgencyPage implements OnInit {
       if (params) {
         this.agency = JSON.parse(params.id);
         
-        this.http.get(`http://bussapp.test/${this.agency}`)
-          .subscribe(data => this.schedule = data.schedule)
+        // this.http.get(`http://bussapp.test/${this.agency}`)
+        //   .subscribe(data => this.schedule = data.schedule)
       } else {
 
         return null ;
