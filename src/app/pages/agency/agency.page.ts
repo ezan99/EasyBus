@@ -28,7 +28,7 @@ export class AgencyPage implements OnInit {
           .subscribe(data => this.schedule = data.schedule)
       } else {
 
-      //  Bo dns ktu, alert, ose error ska zgjedh asend /${this.agency}/
+        return null ;
      }
 
     });
