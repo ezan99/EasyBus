@@ -29,14 +29,14 @@ export class FavoritesPage implements OnInit {
 
   navigateSchedule(id){
 
-    let navigationExtras: NavigationExtras = {
-      queryParams: {
-        id: id,
-      }
-    };
+    // let navigationExtras: NavigationExtras = {
+    //   queryParams: {
+    //     id: id,
+    //   }
+    // };
 
     
-    this.router.navigate(['agency'], navigationExtras);
+    // this.router.navigate(['agency'], navigationExtras);
   }
 
 }

@@ -10,20 +10,13 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<div class="KING">
-  <ion-button >
-    HELLO
-  </ion-button>
-  <ion-button>
-    WORLD
-  </ion-button>
-</div>
+<!--  -->
 <ion-content class="background" scroll="false">
   
   <ion-list>
    <ion-item *ngIf="dateOfEvent"><h1>{{dateOfEvent}}</h1></ion-item>
    <ion-card color="primary">
-     <ion-label class="KINGG"><ion-icon name="calendar-outline"></ion-icon>{{'HOME.date' | translate}}</ion-label>
+     <ion-label ><ion-icon name="calendar-outline"></ion-icon>{{'HOME.date' | translate}}</ion-label>
      <ion-datetime displayformat="MMM DD, YYYY" pickerformat="MMM DD, YYYY" [value]="currentDate"></ion-datetime>
    </ion-card>
   </ion-list>
